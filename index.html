@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary in Context</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6fb;
+    margin:0;
+    padding:30px;
+  
+    direction: rtl;
+    text-align: right;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+  
+    direction: rtl;
+    text-align: right;
+}
+  
+.question label{
+    display:block;
+    text-align:right;
+    margin:8px 0;
+}
+
+h1{
+    text-align:center;
+}
+
+.question{
+    margin-bottom:25px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.question p{
+    font-size:18px;
+}
+
+.correct{
+    color:green;
+    font-weight:bold;
+}
+
+.wrong{
+    color:red;
+    font-weight:bold;
+}
+
+button{
+    background:#4a6cf7;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#3451cc;
+}
+
+#result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>📚 Vocabulary in Context</h1>
+
+<form id="quizForm">
+
+<div class="question">
+<p>1. בשבוע שעבר יצאתי ל־_______ גדול בדרום אמריקה.</p>
+<label><input type="radio" name="q1" value="Adventure"> Adventure</label><br>
+<label><input type="radio" name="q1" value="Album"> Album</label><br>
+<label><input type="radio" name="q1" value="Business"> Business</label>
+</div>
+
+<div class="question">
+<p>2. הצלם הראה לי _______ עם כל התמונות מהטיול.</p>
+<label><input type="radio" name="q2" value="Check"> Check</label><br>
+<label><input type="radio" name="q2" value="Album"> Album</label><br>
+<label><input type="radio" name="q2" value="Degree"> Degree</label>
+</div>
+
+<div class="question">
+<p>3. הנוף היה כל כך _______ שלא יכולתי להפסיק לצלם.</p>
+<label><input type="radio" name="q3" value="Amazing"> Amazing</label><br>
+<label><input type="radio" name="q3" value="Equipment"> Equipment</label><br>
+<label><input type="radio" name="q3" value="Passenger"> Passenger</label>
+</div>
+
+<div class="question">
+<p>4. לאחר הלימודים הוא פתח _______ משלו.</p>
+<label><input type="radio" name="q4" value="Dessert"> Dessert</label><br>
+<label><input type="radio" name="q4" value="Business"> Business</label><br>
+<label><input type="radio" name="q4" value="Flight"> Flight</label>
+</div>
+
+<div class="question">
+<p>5. לפני שנכנסתי לשדה התעופה הייתי צריך _______ את הכרטיס.</p>
+<label><input type="radio" name="q5" value="Communicate"> Communicate</label><br>
+<label><input type="radio" name="q5" value="Check"> Check</label><br>
+<label><input type="radio" name="q5" value="Expect"> Expect</label>
+</div>
+
+<div class="question">
+<p>6. כשנסעתי לחו"ל הייתי צריך _______ עם אנשים ממדינות אחרות.</p>
+<label><input type="radio" name="q6" value="Degree"> Degree</label><br>
+<label><input type="radio" name="q6" value="Communicate"> Communicate</label><br>
+<label><input type="radio" name="q6" value="Dessert"> Dessert</label>
+</div>
+
+<div class="question">
+<p>7. לאחר שלוש שנים באוניברסיטה קיבלתי _______.</p>
+<label><input type="radio" name="q7" value="Album"> Album</label><br>
+<label><input type="radio" name="q7" value="Degree"> Degree</label><br>
+<label><input type="radio" name="q7" value="Flight"> Flight</label>
+</div>
+
+<div class="question">
+<p>8. בסוף הארוחה קיבלנו _______ טעים.</p>
+<label><input type="radio" name="q8" value="Dessert"> Dessert</label><br>
+<label><input type="radio" name="q8" value="Equipment"> Equipment</label><br>
+<label><input type="radio" name="q8" value="Pain"> Pain</label>
+</div>
+
+<div class="question">
+<p>9. לפני היציאה לטיול בדקנו שכל ה־_______ נמצא בתיק.</p>
+<label><input type="radio" name="q9" value="Amazing"> Amazing</label><br>
+<label><input type="radio" name="q9" value="Equipment"> Equipment</label><br>
+<label><input type="radio" name="q9" value="Passenger"> Passenger</label>
+</div>
+
+<div class="question">
+<p>10. המדריך אמר לנו _______ מזג אוויר גשום.</p>
+<label><input type="radio" name="q10" value="Check"> Check</label><br>
+<label><input type="radio" name="q10" value="Expect"> Expect</label><br>
+<label><input type="radio" name="q10" value="Album"> Album</label>
+</div>
+
+<div class="question">
+<p>11. הגענו לשדה התעופה שעתיים לפני ה־_______.</p>
+<label><input type="radio" name="q11" value="Flight"> Flight</label><br>
+<label><input type="radio" name="q11" value="Business"> Business</label><br>
+<label><input type="radio" name="q11" value="Pain"> Pain</label>
+</div>
+
+<div class="question">
+<p>12. ה־_______ שישב לידי במטוס היה מאוד נחמד.</p>
+<label><input type="radio" name="q12" value="Photographer"> Photographer</label><br>
+<label><input type="radio" name="q12" value="Passenger"> Passenger</label><br>
+<label><input type="radio" name="q12" value="Degree"> Degree</label>
+</div>
+
+<div class="question">
+<p>13. ה־_______ צילם תמונות מדהימות של ההרים.</p>
+<label><input type="radio" name="q13" value="Equipment"> Equipment</label><br>
+<label><input type="radio" name="q13" value="Photographer"> Photographer</label><br>
+<label><input type="radio" name="q13" value="Dessert"> Dessert</label>
+</div>
+
+<div class="question">
+<p>14. אחרי ההליכה הארוכה הרגשתי _______ ברגליים.</p>
+<label><input type="radio" name="q14" value="Pain"> Pain</label><br>
+<label><input type="radio" name="q14" value="Album"> Album</label><br>
+<label><input type="radio" name="q14" value="Communicate"> Communicate</label>
+</div>
+
+<button type="button" onclick="checkAnswers()">
+בדוק תשובות
+</button>
+
+<button type="button" onclick="location.reload()">
+🔄 נסה שוב
+</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function checkAnswers(){
+
+const answers = {
+q1:"Adventure",
+q2:"Album",
+q3:"Amazing",
+q4:"Business",
+q5:"Check",
+q6:"Communicate",
+q7:"Degree",
+q8:"Dessert",
+q9:"Equipment",
+q10:"Expect",
+q11:"Flight",
+q12:"Passenger",
+q13:"Photographer",
+q14:"Pain"
+};
+
+let score = 0;
+
+for(let key in answers){
+
+const selected =
+document.querySelector(`input[name="${key}"]:checked`);
+
+if(selected && selected.value === answers[key]){
+score++;
+}
+
+}
+
+let message="";
+
+if(score===14){
+message="🏆 מושלם!";
+}
+else if(score>=12){
+message="🌟 מצוין!";
+}
+else if(score>=9){
+message="👍 עבודה טובה!";
+}
+else{
+message="📚 כדאי לחזור על המילים ולנסות שוב.";
+}
+
+document.getElementById("result").innerHTML =
+`${message}<br><br>ציון: ${score}/14`;
+
+}
+
+</script>
+
+</body>
+</html>
